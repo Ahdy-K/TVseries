@@ -1,14 +1,14 @@
 import React from 'react';
-import { Switch, Route, Router } from 'react-router-dom';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import Series from '../../container/series/Series';
 
 const Main = props =>(
-    <Router>
+    <BrowserRouter>
     <Switch> 
      
         <Route exact path="/" component={Series} />
      
     </Switch>
- </Router>
+ </BrowserRouter>
 );
 export default Main ;
